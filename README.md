@@ -11,14 +11,17 @@ Le schéma relationnel repose sur **4 tables principales**, avec des contraintes
 ### Tables :
 
 - **users**
+
   - `id` (PK)
   - `name`, `email`, `created_at`
 
 - **courses**
+
   - `id` (PK)
   - `title`, `category` (ENUM), `price`
 
 - **enrollments**
+
   - `id` (PK)
   - `user_id` (FK)
   - `course_id` (FK)
@@ -56,31 +59,38 @@ Les données sont réalistes, cohérentes, et visent à simuler une activité r�
 
 ### 🔍 A. Statistiques Utilisateurs
 
+| Statistiques Utilisateurs :
+| Nombre total d'utilisateurs |
+| Liste des utilisateurs avec leur nombre d’inscriptions (ycompris ceux à 0) |
+| Moyenne d’inscriptions par utilisateur |
+| Liste des utilisateurs avec leur date d'inscription la plus ancienne |
+| Nombre d’inscription par date |
+
 ---
 
 ### 🔍 B. Analyse des Cours
 
-| Analyse | Description |
-|--------|-------------|
-| Nombre de cours par catégorie | Regroupe les cours selon leur domaine |
-| Prix moyen par catégorie | Indique le positionnement tarifaire moyen |
-| Cours le plus cher / moins cher | Repère les extrêmes de tarification |
-| Nombre d'inscriptions par cours | Évalue la popularité des formations |
-| 🔹 Bonus : Cours sans inscription | Détecte les formations non consultées |
-| 🔹 Bonus : Cours avec taux de complétion > 80% | Met en évidence les formations efficaces |
+| Analyse                                        | Description                               |
+| ---------------------------------------------- | ----------------------------------------- |
+| Nombre de cours par catégorie                  | Regroupe les cours selon leur domaine     |
+| Prix moyen par catégorie                       | Indique le positionnement tarifaire moyen |
+| Cours le plus cher / moins cher                | Repère les extrêmes de tarification       |
+| Nombre d'inscriptions par cours                | Évalue la popularité des formations       |
+| 🔹 Bonus : Cours sans inscription              | Détecte les formations non consultées     |
+| 🔹 Bonus : Cours avec taux de complétion > 80% | Met en évidence les formations efficaces  |
 
 ---
 
 ### 💰 C. Revenu de la Plateforme
 
-| Analyse | Description |
-|--------|-------------|
-| Revenu total généré | Somme des revenus des cours ayant des inscriptions |
-| Revenu total par cours | Détail des performances financières de chaque formation |
-| Revenu total par catégorie | Évalue les filières les plus rentables |
-| Revenu moyen par utilisateur inscrit | Indique la valeur moyenne d’un client |
-| 🔹 Bonus : Top 5 des cours les plus rentables | Classement des cours à plus fort ROI |
-| 🔹 Bonus : % de cours gratuits suivis | Part des cours à 0€ dans la consommation |
+| Analyse                                       | Description                                             |
+| --------------------------------------------- | ------------------------------------------------------- |
+| Revenu total généré                           | Somme des revenus des cours ayant des inscriptions      |
+| Revenu total par cours                        | Détail des performances financières de chaque formation |
+| Revenu total par catégorie                    | Évalue les filières les plus rentables                  |
+| Revenu moyen par utilisateur inscrit          | Indique la valeur moyenne d’un client                   |
+| 🔹 Bonus : Top 5 des cours les plus rentables | Classement des cours à plus fort ROI                    |
+| 🔹 Bonus : % de cours gratuits suivis         | Part des cours à 0€ dans la consommation                |
 
 ---
 
