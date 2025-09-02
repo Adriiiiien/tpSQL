@@ -1,4 +1,7 @@
 -- Création des tables
+DROP DATABASE IF EXISTS online_courses;
+CREATE DATABASE IF NOT EXISTS online_courses;
+USE online_courses;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
